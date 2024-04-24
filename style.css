@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* NAVBAR SECTION FROM BOOTSTRAP */
+#navbar {
+  background: rgb(73, 70, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(73, 70, 70, 1) 0%,
+    rgba(25, 18, 29, 1) 43%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  min-height: 7rem;
+}
+
+#navbarLink,
+#navbarLinklogo {
+  color: white;
+}
+
+#navbarLinklogo {
+  font-size: 1.5rem;
+}
+
+#navbar-toggler {
+  background-color: white;
+}
+
+/* HERO SECTION */
+.hero-section {
+  min-height: 60rem;
+  text-align: center;
+  background-image: url('./images/hero3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  text-align: center;
+  padding: 20rem 2rem;
+  padding-bottom: 0;
+}
+.hero-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero-subtitle {
+  width: 60rem;
+  color: white;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
+.btn .btn-membership,
+.btn .btn-schedule {
+  background-color: rgb(251, 139, 1);
+  border: 1px solid rgb(251, 139, 1);
+  padding: 1rem 2rem;
+  font-weight: bold;
+  border-radius: 20rem;
+  color: white;
+}
+.btn .btn-membership:hover {
+  background-color: rgb(217, 141, 48);
+}
+.btn .btn-schedule {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+  color: black;
+  margin-left: 1rem;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
+  filter: blur(5px);
+  transition: all 3s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+.sec {
+  height: 40rem;
+}
+
+.hiddenbtn {
+  opacity: 0;
+  transform: translateX(100%);
+  filter: blur(5px);
+  transition: all 3s;
+}
+
+.showbtn {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hero-section {
+    background-position-x: center;
+	min-height: 50rem;
+  }
+  .hero {
+    padding: 20rem 1rem;
+    padding-bottom: 0;
+  }
+  .btn-schedule {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+    width: 90%;
+  }
+}
