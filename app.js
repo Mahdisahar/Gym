@@ -56,3 +56,19 @@ const sportClubObservation = new IntersectionObserver((clubs) => {
 
 const hiddenSportClubsElement = document.querySelectorAll('.clubshidden');
 hiddenSportClubsElement.forEach((el)=> sportClubObservation.observe(el));
+
+
+// THIRD SECTION ACTIVITY SECTION
+
+const activeTitleElement = new IntersectionObserver((activeTitle) => {
+	activeTitle.forEach((active) => {
+		if(active.isIntersecting) {
+			active.target.classList.add('showActive');
+		} else {
+			active.target.classList.remove('showActive');
+		}
+	});
+});
+
+const activeElement = document.querySelectorAll('.hiddentitle');
+activeElement.forEach((el) => activeTitleElement.observe(el));

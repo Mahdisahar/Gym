@@ -8,6 +8,7 @@
 	--primary-color:  rgb(255, 255, 255);
 	--secondary-color: rgb(251, 139, 1);
 	--secondary-color-hover: rgb(214, 122, 10);
+	--final-color: rgb(0,0,0);
 }
 
 /* NAVBAR SECTION FROM BOOTSTRAP */
@@ -81,7 +82,7 @@
 }
 
 .btn .btn-schedule:hover {
-	color: black;
+	color: var(--final-color);
 	background-color: var(--primary-color);
 }
 
@@ -114,10 +115,23 @@
   transform: translateX(0);
 }
 
+.hiddentitle {
+	opacity: 0;
+	transform: translateY(-100%);
+	filter: blur(5px);
+	transition: all 2s;
+}
+
+.showActive {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(0);
+}
+
 /* CLUB SECTION */
 
 .club {
-	background-color: black;
+	background-color: var(--final-color);
 	min-height: 30rem;
 	padding-bottom: 4rem;
 }
@@ -200,8 +214,99 @@
 	transform: translateY(0);
   }
 
+  /* ACTIVITY SECTION */
+  .activity {
+	text-align: center;
+  }
+  .activity--subcontainer {
+	width: 30%;
+  }
+  .activity--title {
+	color: var(--final-color);
+	font-weight: bold;
+	padding: 4rem;
+	font-size: 3rem;
+  }
+  .activity--container {
+	display: flex;
+	padding-bottom: 4rem;
+	justify-content: center;
+	gap: 6rem;
+  }
+
+  .activity--container p {
+	font-size: 2rem;
+	text-align: left;
+  }
+
+.activityimage {
+	padding-top: 2rem;
+	width: 38rem;
+}
+
+.activityimage2 {
+	width: 40rem;
+	height: 30rem;
+}
+
+
+
     /* CLUB SECTION IN MEDIA */
+	@media screen and (min-width:320px) and (max-width: 768px) {
+		.hero-section {
+			background-position-x: center;
+			min-height: 50rem;
+		  }
+		  .hero-subtitle {
+			font-size: 1rem;
+			width: 90%;
+		  }
+		  /* .activity--container {
+			flex-direction: column;
+			gap: 2rem;
+			margin: 0 2rem;
+		  } */
+		
+	}
+
+	/* @media screen and (min-width:320px) and (max-width: 375px) {
+		.activity--subcontainer {
+			width: 100%;
+		  }	
+		  .activityimage {
+			width:16rem;
+		}
+
+		.activityimage2 {
+			width: 17rem;
+			height: 25rem;
+		}
+	} */
+
+	/* @media screen and (min-width:376px) and (max-width: 425px) {
+		.activity--subcontainer {
+			width: 100%;
+		  }	
+		  .activityimage {
+			width:22rem;
+		}
+		.activityimage2 {
+			width: 20rem;
+		}
+		
+	} */
+
+
   @media (min-width: 320px) and (max-width: 425px) {
+	  .hero {
+		padding: 20rem 1rem;
+		padding-bottom: 0;
+	  }
+	
+	  .hero-title {
+		font-size: 2rem;
+	  }
+
 	.club-subcontainer {
 		flex-direction: column;
 		gap: 2rem;
@@ -211,7 +316,7 @@
 		height: 10rem;
 		padding-top: 3rem;
 	  }
-	  .club-title {
+	  .club-title, .activity--title {
 		font-size: 2rem ;
 	  }
 	
@@ -222,24 +327,33 @@
 		margin-left: 0;
 		margin-top: 1rem;
 	  }
+
+	  /* .activity--subcontainer p {
+		font-size: 1rem;
+	  }
+	    .activity--title {
+		font-size: 1.5rem;
+		padding: 2rem;
+	  } */
 }
 
 
-@media (min-width: 320px) and (max-width: 768px) {
-  .hero-section {
-    background-position-x: center;
-	min-height: 50rem;
-  }
-  .hero {
-    padding: 20rem 1rem;
-    padding-bottom: 0;
-  }
+ /* @media (min-width: 426px) and (max-width: 766px) {
+	.activity--subcontainer {
+		width: 80%;
+	  }
 
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-subtitle {
-    font-size: 1rem;
-    width: 90%;
-  }
-}
+	  .activityimage {
+		width:30rem;
+	}
+	.activityimage2 {
+		width: 20rem;
+	}
+
+  } */
+
+  /* @media screen and (max-width:768px) {
+	.activity--subcontainer {
+		width: 90%;
+	  }
+  } */
