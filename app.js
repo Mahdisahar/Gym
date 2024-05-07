@@ -72,3 +72,18 @@ const activeTitleElement = new IntersectionObserver((activeTitle) => {
 
 const activeElement = document.querySelectorAll('.hiddentitle');
 activeElement.forEach((el) => activeTitleElement.observe(el));
+
+// FOR 3 SMALL IMAGES
+
+const hiddenImagesElement = new IntersectionObserver((image) => {
+	image.forEach((images) => {
+		if (images.isIntersecting) {
+			images.target.classList.add('showImages');
+		} else {
+			images.target.classList.remove('showImages');
+		}
+	});
+});
+
+const hiddenImages = document.querySelectorAll('.hiddenimage');
+hiddenImages.forEach((el) => hiddenImagesElement.observe(el));

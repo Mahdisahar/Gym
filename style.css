@@ -226,6 +226,22 @@
   transform: translateY(0);
 }
 
+/* ANIMATION FOR 3 SMALL IMAGES */
+.hiddenimage {
+	opacity: 0;
+	transform: translateY(100%);
+	filter: blur(5px);
+	transition: all 3s;
+}
+
+.showImages {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateY(0);
+
+
+}
+
 /* ACTIVITY SECTION */
 .activity {
   text-align: center;
