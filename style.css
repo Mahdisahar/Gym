@@ -5,10 +5,10 @@
 }
 
 :root {
-	--primary-color:  rgb(255, 255, 255);
-	--secondary-color: rgb(251, 139, 1);
-	--secondary-color-hover: rgb(214, 122, 10);
-	--final-color: rgb(0,0,0);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(251, 139, 1);
+  --secondary-color-hover: rgb(214, 122, 10);
+  --final-color: rgb(0, 0, 0);
 }
 
 /* NAVBAR SECTION FROM BOOTSTRAP */
@@ -50,17 +50,20 @@
   padding: 20rem 2rem;
   padding-bottom: 0;
 }
+
 .hero-title {
   color: var(--primary-color);
   font-size: 3rem;
   font-weight: bold;
 }
+
 .hero-subtitle {
   width: 60rem;
   color: var(--primary-color);
   margin: 2rem auto;
   font-size: 2rem;
 }
+
 .btn .btn-membership,
 .btn .btn-schedule {
   background-color: var(--secondary-color);
@@ -70,20 +73,21 @@
   border-radius: 20rem;
   color: var(--primary-color);
 }
+
 .btn .btn-membership:hover {
   background-color: var(--secondary-color-hover);
 }
 
 .btn .btn-schedule {
-  background-color:  transparent;
-  border: 2px solid  var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
   color: var(--primary-color);
   margin-left: 1rem;
 }
 
 .btn .btn-schedule:hover {
-	color: var(--final-color);
-	background-color: var(--primary-color);
+  color: var(--final-color);
+  background-color: var(--primary-color);
 }
 
 .hidden {
@@ -98,6 +102,7 @@
   filter: blur(0);
   transform: translateX(0);
 }
+
 .sec {
   height: 40rem;
 }
@@ -116,244 +121,302 @@
 }
 
 .hiddentitle {
-	opacity: 0;
-	transform: translateY(-100%);
-	filter: blur(5px);
-	transition: all 2s;
+  opacity: 0;
+  transform: translateY(-100%);
+  filter: blur(5px);
+  transition: all 2s;
 }
 
 .showActive {
-	opacity: 1;
-	filter: blur(0);
-	transform: translateY(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 /* CLUB SECTION */
 
 .club {
-	background-color: var(--final-color);
-	min-height: 30rem;
-	padding-bottom: 4rem;
+  background-color: var(--final-color);
+  min-height: 30rem;
+  padding-bottom: 4rem;
 }
+
 .club-container {
-	text-align: center;
-	padding: 4rem 0;
+  text-align: center;
+  padding: 4rem 0;
 }
+
 .club-title {
-	color: var(--primary-color);
-	font-size: 3rem;
+  color: var(--primary-color);
+  font-size: 3rem;
 }
+
 .club-bara {
-	color:  var(--primary-color);
-	padding-top: 1rem;
-	width: 40%;
-	margin: 0 auto;
+  color: var(--primary-color);
+  padding-top: 1rem;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .club-hidden {
-	opacity: 0;
-	transform: translateY(100%);
-	filter: blur(5px);
-	transition: all 2s;
-  }
-  
-  .showclub {
-	opacity: 1;
-	filter: blur(0);
-	transform: translateY(0);
-  }
-  .club-subcontainer {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items:center;
-	text-align: center;
-	gap: 4rem;
-  }
+  opacity: 0;
+  transform: translateY(100%);
+  filter: blur(5px);
+  transition: all 2s;
+}
 
-  .club-wrap {
-	border: 4px solid var(--secondary-color);
-	border-radius: 50%;
-	width: 10rem;
-	height: 10rem;
-	padding: 2.5rem;
-	
-  }
-  .club-subtitle {
-	font-size: 1rem;
-	color:  var(--primary-color);
-  }
-  .club-wrap--title {
-	width: 1rem;
-	border: 4px solid var(--secondary-color);
-	border-radius: 50%;
-	width: 10rem;
-	height: 10rem;
-	padding-top: 3rem;
-  }
+.showclub {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
 
-  .club-subtitle--title {
-	font-size: 1rem;
-	color: var(--primary-color);
-  }
-  .club-subtitle--title:hover , .club-subtitle:hover {
-	cursor: pointer;
-	color: var(--secondary-color);
-  }
+.club-subcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  gap: 4rem;
+}
 
-  .clubshidden {
-	opacity: 0;
-	transform: translateY(100%);
-	filter: blur(5px);
-	transition: all 2s;
-  }
-  
-  .showSportClub {
-	opacity: 1;
-	filter: blur(0);
-	transform: translateY(0);
-  }
+.club-wrap {
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding: 2.5rem;
+}
 
-  /* ACTIVITY SECTION */
-  .activity {
-	text-align: center;
-  }
-  .activity--subcontainer {
-	width: 30%;
-  }
-  .activity--title {
-	color: var(--final-color);
-	font-weight: bold;
-	padding: 4rem;
-	font-size: 3rem;
-  }
-  .activity--container {
-	display: flex;
-	padding-bottom: 4rem;
-	justify-content: center;
-	gap: 6rem;
-  }
+.club-subtitle {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
 
-  .activity--container p {
-	font-size: 2rem;
-	text-align: left;
-  }
+.club-wrap--title {
+  width: 1rem;
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  padding-top: 3rem;
+}
 
-.activityimage {
-	padding-top: 2rem;
-	width: 38rem;
+.club-subtitle--title {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.club-subtitle--title:hover,
+.club-subtitle:hover {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.clubshidden {
+  opacity: 0;
+  transform: translateY(100%);
+  filter: blur(5px);
+  transition: all 2s;
+}
+
+.showSportClub {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* ACTIVITY SECTION */
+.activity {
+  text-align: center;
+}
+
+.activity--title {
+  color: var(--final-color);
+  font-weight: bold;
+  padding: 4rem;
+  font-size: 3rem;
+}
+
+.activity--container {
+  width: 62%;
+  display: flex;
+  padding-bottom: 4rem;
+  justify-content: center;
+  gap: 4rem;
+  margin: 1rem auto;
+}
+
+.activity-subtitle {
+  font-size: 2rem;
+  text-align: left;
+  width: 80%;
 }
 
 .activityimage2 {
-	width: 40rem;
-	height: 30rem;
+  width: 40rem;
+  height: 30rem;
 }
 
+/* THREE IMAGES FOR ACTIVITY SECTION */
+.active--images {
+  margin-top: -15rem;
+  margin-left: 23rem;
+  margin-bottom: 2rem;
+}
+.activeimage3 {
+  width: 20rem;
+  height: 15rem;
+  padding: 0 0.5rem;
+}
 
+/* CLUB SECTION IN MEDIA */
 
-    /* CLUB SECTION IN MEDIA */
-	@media screen and (min-width:320px) and (max-width: 768px) {
-		.hero-section {
-			background-position-x: center;
-			min-height: 50rem;
-		  }
-		  .hero-subtitle {
-			font-size: 1rem;
-			width: 90%;
-		  }
-		  /* .activity--container {
-			flex-direction: column;
-			gap: 2rem;
-			margin: 0 2rem;
-		  } */
-		
-	}
-
-	/* @media screen and (min-width:320px) and (max-width: 375px) {
-		.activity--subcontainer {
-			width: 100%;
-		  }	
-		  .activityimage {
-			width:16rem;
-		}
-
-		.activityimage2 {
-			width: 17rem;
-			height: 25rem;
-		}
-	} */
-
-	/* @media screen and (min-width:376px) and (max-width: 425px) {
-		.activity--subcontainer {
-			width: 100%;
-		  }	
-		  .activityimage {
-			width:22rem;
-		}
-		.activityimage2 {
-			width: 20rem;
-		}
-		
-	} */
-
-
-  @media (min-width: 320px) and (max-width: 425px) {
-	  .hero {
-		padding: 20rem 1rem;
-		padding-bottom: 0;
-	  }
-	
-	  .hero-title {
-		font-size: 2rem;
-	  }
-
-	.club-subcontainer {
-		flex-direction: column;
-		gap: 2rem;
-	}
-	.club-wrap--title {
-		width: 10rem;
-		height: 10rem;
-		padding-top: 3rem;
-	  }
-	  .club-title, .activity--title {
-		font-size: 2rem ;
-	  }
-	
-	  .club-bara {
+@media screen and (min-width:1025px) and (max-width:1439px) {
+	.activity--container {
 		width: 90%;
-	  }
-	  .btn .btn-schedule {
-		margin-left: 0;
-		margin-top: 1rem;
-	  }
-
-	  /* .activity--subcontainer p {
-		font-size: 1rem;
-	  }
-	    .activity--title {
-		font-size: 1.5rem;
-		padding: 2rem;
-	  } */
-}
-
-
- /* @media (min-width: 426px) and (max-width: 766px) {
-	.activity--subcontainer {
-		width: 80%;
-	  }
-
-	  .activityimage {
-		width:30rem;
+		margin: 1rem;
 	}
-	.activityimage2 {
+	.active--images {
+		margin-left: 10rem;
+	  }
+	  .activeimage3 {
+		width: 16rem;
+		 height: 12rem;
+	  }
+	  .activityimage2 {
 		width: 20rem;
-	}
-
-  } */
-
-  /* @media screen and (max-width:768px) {
-	.activity--subcontainer {
-		width: 90%;
+		height: 25rem;
 	  }
-  } */
+	  .activity-subtitle {
+		width: 100%;
+	  }
+	  .activityimage {
+		width: 30rem;
+	  }
+	  .activity-subtitle {
+		margin-left: 2rem;
+	  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .hero-section {
+    background-position-x: center;
+    min-height: 50rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .activity--container {
+    flex-direction: column;
+    width: 90%;
+    gap: 2rem;
+  }
+
+  .activity-subtitle {
+    width: 100%;
+    margin-left: 0;
+  }
+  .activityimage,
+  .activityimage2 {
+    width: 100%;
+  }
+
+  .active--images {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+  .activeimage3 {
+    padding-top: 1rem;
+    width: 100%;
+	height: inherit;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .activity-subtitle {
+    font-size: 2rem;
+  }
+  .activityimage {
+    width: 30rem;
+  }
+
+  .activityimage2 {
+    width: 25rem;
+    height: 30rem;
+  }
+  .activity-subtitle {
+    width: 100%;
+    margin-left: 0;
+  }
+  .active--images {
+    flex-direction: row;
+	padding-top: 1rem;
+	margin-left: 20%;
+  }
+  .activeimage3 {
+    width:28%;
+	height: inherit;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .hero {
+    padding: 20rem 1rem;
+    padding-bottom: 0;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .club-subcontainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .club-wrap--title {
+    width: 10rem;
+    height: 10rem;
+    padding-top: 3rem;
+  }
+
+  .club-title {
+    font-size: 2rem;
+  }
+
+  .activity--title {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .club-bara {
+    width: 90%;
+  }
+
+  .btn .btn-schedule {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .activity-subtitle {
+    font-size: 1rem;
+  }
+  .activity--container {
+    margin: 1rem;
+    padding-bottom: 0;
+    width: 90%;
+  }
+  .activityimage {
+    padding-top: 2rem;
+    width: 100%;
+  }
+
+  .activityimage2 {
+    width: 100%;
+    height: 20rem;
+  }
+}
